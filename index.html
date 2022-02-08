@@ -9,32 +9,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0487acea57.js" crossorigin="anonymous"></script>
     <title>Pointless</title>
 </head>
 
 <body>
+  <div class='contrast' style="width: fit-content; position: relative; margin: auto; margin-top: 50px; font-size: 30px;">
+    <i class="fas fa-moon darkmoon"></i>
+    <i class="far fa-moon lightmoon" style="color: white"></i>
+  </div>
 
     <div class="container" style="padding-top: 100px; width: 100%; display: flex; flex-direction: column; justify-content: space-around;">
-    <div class="card" style="width: 20rem; margin: 0 auto; margin-bottom: 15px;">
+    <div id="topcard" class="card bg-dark text-light" style="width: 20rem; margin: 0 auto; margin-bottom: 15px;">
         <img src="https://i.guim.co.uk/img/media/fbb1974c1ebbb6bf4c4beae0bb3d9cb93901953c/10_7_2380_1428/master/2380.jpg?width=700&quality=85&auto=format&fit=max&s=b7f7b9f360dab635f37e406d1be87542" class="card-img-top img1" style="position: relative;">
         <img src="https://www.slashfilm.com/img/gallery/the-extreme-lengths-brad-pitt-went-to-for-his-fight-club-role/intro-1631539645.webp" class="card-img-top img2" style="position: absolute; opacity: 0;">
 
         <div class="card-body">
             <h5 class="card-title">Pointless?</h5>
             <p class="card-text">Yes, pointless.</p>
-            <a href="#" class="btn btn-danger" onclick="revealQuote()">Nothing will happen</a>
+            <a href="#" class="btn btn-primary" id="button1" onclick="revealQuote()">Nothing will happen</a>
         </div>
     </div>
 
 
-        <div class="card quoteOpacity" style="height: fit-content; width: fit-content; opacity: 0; margin: 0 auto;">
+        <div id="bottomcard" class="card quoteOpacity bg-dark text-light" style="height: fit-content; width: fit-content; opacity: 0; margin: 0 auto;">
             <div class="card-header">
               Pointless Quote
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
-                <p>What is the point of it all?</p>
-                <footer class="blockquote-footer">Someone in <cite title="Source Title">A Camus Novel</cite></footer>
+                <p class="quotes"></p>
+                <footer class="blockquote-footer">Someone in <cite class="author" title="Source Title"></cite></footer>
               </blockquote>
             </div>
         </div>

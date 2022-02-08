@@ -8,3 +8,16 @@
 body {
     background-color: black;
 }
+
+.fa-moon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.darkmoon {
+    opacity: 0;
+}
+
+.lightmoon {
+    opacity: 1;
+}
