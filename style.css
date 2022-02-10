@@ -21,3 +21,9 @@ body {
 .lightmoon {
     opacity: 1;
 }
+
+.doggydays {
+    color: white;
+    text-decoration: none;
+    font-family:monospace;
+}
