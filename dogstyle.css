@@ -9,3 +9,13 @@ body:before {
         width: 50%;
     }
 }
+
+.carousel-slide {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    position: relative;
+}
