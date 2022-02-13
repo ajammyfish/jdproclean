@@ -92,3 +92,36 @@ contrast.addEventListener('click', ()=>{
         but.classList.add('btn-primary');
     }
 })
+
+const carousel = document.querySelector('.carousel-slide');
+const currentImg = document.querySelector('.current-image');
+const imageArr = [
+    'https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+    'https://images.pexels.com/photos/125457/pexels-photo-125457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+    'https://images.pexels.com/photos/544554/pexels-photo-544554.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260', 
+    'https://images.pexels.com/photos/96377/pexels-photo-96377.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260', 
+    'https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+];
+
+currentImg.src = imageArr[0];
+let count = 0;
+
+setInterval(()=>{
+    if (count<imageArr.length-1) {
+        count++;
+        setTimeout(()=>{
+            currentImg.style.opacity = '0';
+            currentImg.style.transition = '0.5s';
+        }, 2000);
+        setTimeout(()=>{
+            currentImg.src=imageArr[count];
+            currentImg.style.opacity = '1';
+            currentImg.style.transition = '1s';
+        }, 3000)
+    }
+    else {
+        currentImg.src = imageArr[0];
+        count = 0;
+    }
+}, 6000)
+
