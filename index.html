@@ -30,7 +30,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="#page-top" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -267,7 +267,7 @@
                 <div class="col-md-6">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" class="rounded-circle mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" class="rounded-circle mb-3">
                             <h3 class="card-title mb-3">James Fisher</h3>
                             <p class="card-text">James is the sole owner of JD Pro-Clean, a business he started 
                                 after two years of industry experience. When he's not working, his hobbies 
@@ -283,7 +283,7 @@
                 <div class="col-md-6">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="rounded-circle mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="" class="rounded-circle mb-3">
                             <h3 class="card-title mb-3">David Fisher</h3>
                             <p class="card-text"> 
                                 David is a previous London Cab Driver who recently took on the role of working alongside his son James. 
@@ -301,7 +301,7 @@
         </div>
     </section>
 
-    <section class="p5 my-5">
+    <section id="contact" class="p5 my-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
@@ -324,6 +324,43 @@
             </div>
         </div>
     </section>
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+<script>
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+
+  formbutton("create", {
+    action: "https://formspree.io/f/myyowzgn",
+    title: "Contact Us!",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com",
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        required: true,
+        placeholder: "What can we help you with?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "blue"
+      },
+      button: {
+        backgroundColor: "blue"
+      }
+    },
+    initiallyVisible: false
+  });
+</script>
 
 
 
