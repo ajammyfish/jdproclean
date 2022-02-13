@@ -1,29 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+body:before {
+    display: block;
+    content: '';
+    height: 60px;
 }
 
-body {
-    background-color: black;
-}
-
-.fa-moon {
-    position: absolute;
-    cursor: pointer;
-}
-
-.darkmoon {
-    opacity: 0;
-}
-
-.lightmoon {
-    opacity: 1;
-}
-
-.doggydays {
-    color: white;
-    text-decoration: none;
-    font-family:monospace;
+@media(min-width: 768px ) {
+    .news-input {
+        width: 50%;
+    }
 }
