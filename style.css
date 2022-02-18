@@ -9,3 +9,9 @@ body:before {
         width: 50%;
     }
 }
+
+ 
+.carousel-item img {
+    height: 500px;
+    object-fit: contain;
+}
